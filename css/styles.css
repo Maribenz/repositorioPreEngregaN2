@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* GENERALES */
+
+.btn {
+  background-color: indigo;
+}
+
+/*
+#021013 --> Negro
+*/
+
+nav {
+  background-color: #021013;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 0.3fr 2.4fr 0.3fr;  VER ESTOOOOOOOOO */
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+/* HEADER */
+.header {
+  grid-area: header;
+  margin-bottom: 5px;
+}
+
+/* MAIN */
+.main {
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "video video video"
+    "disciplinas disciplinas disciplinas"
+    "profesores profesores profesores"
+    "beneficios beneficios beneficios"
+    "empezaHoy empezaHoy empezaHoy";
+  grid-area: main;
+}
+
+/* SECTOR VIDEO */
+.contenedor__sectorVideo {
+  grid-area: video;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton__empeza {
+  /* ARREGLAR BOTÓN */
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+  background-color: #E15A97;
+  /* CAMBIAR ESTE FONDO */
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+}
+
+/* SECTOR DISCIPLINAS */
+.disciplinas {
+  grid-area: disciplinas;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.contenedor__introduccion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.contenedor__cartillas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 0px 20px;
+}
+
+/* SECTOR PROFESORES */
+.profesores {
+  grid-area: profesores;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+
+.profesores__contenedor__cartillas__cartillaProfesor {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profesores__contenedor__cartillas__cartillaProfesor h3 {
+  margin: 10px;
+}
+
+.profesores__contenedor__cartillas__cartillaProfesor img {
+  margin: 0px 20px;
+}
+
+/* SECTOR BENEFICIOS */
+.beneficios {
+  grid-area: beneficios;
+  padding: 0rem 11rem;
+  margin: 30px 0px;
+}
+
+.carta__beneficios__informacion__texto {
+  padding-right: 400px;
+}
+
+
+
+
+/* SECTOR EMPEZÁ HOY */
+.empezaHoy {
+  grid-area: empezaHoy;
+  padding: 0rem 11rem;
+  margin: 30px 0px;
+}
+
+.carta__empezaHoy__informacion__boton {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  grid-area: footer;
+}
+
+.footer__contenedor__redesSociales {
+  display: flex;
+  justify-content: end;
+}
+
+.footer__contenedor__redesSociales a {
+  margin: 0px 20px;
+}

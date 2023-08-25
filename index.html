@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gym Total</title>
+
+  <!-- Fuente Anton -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+
+  <!-- Fuente Barlow -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap" rel="stylesheet" />
+
+  <!-- Link de BootsTrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- AGREGAR A LOS TÍTULOS COLOR, CAMBIAR FORMATO DE LETRA, VER SI PUEDO CARGAR + RÁPIDO LA PÁGINA -->
+
+  <div class="contenedor" style="background-color: aqua">
+    <header class="header sticky-top" style="background-color: rgb(165, 130, 34)">
+      <!-- CUIDADO ACÁ LE AGREGUÉ STICKY -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logoGymTotal.svg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top" />
+            GymTotal
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Disciplinas
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Funcional</a></li>
+                  <li><a class="dropdown-item" href="#">Spinning</a></li>
+                  <li><a class="dropdown-item" href="#">Pesas</a></li>
+                  <li><a class="dropdown-item" href="#">GAP</a></li>
+                  <li><a class="dropdown-item" href="#">Cardio</a></li>
+                  <li><a class="dropdown-item" href="#">Yoga</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"> Sobre Nosotros </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Galería
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Vídeos</a></li>
+                  <li><a class="dropdown-item" href="#">Fotos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+      <!-- Sección Video -->
+      <section class="contenedor__sectorVideo" style="background-color: violet">
+        <div class="ratio ratio-16x9">
+          <video autoplay muted loop>
+            <source src="..." />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="boton__empeza">
+          <!-- COLOCAR HIPERVINCULO, ARREGLAR BOTON -->
+          <a href="./pages/contacto.html">¡EMPEZÁ HOY!</a>
+        </div>
+      </section>
+
+      <!-- Sección Disciplinas -->
+      <!-- VER SI SE PUEDE AGRANDAR LAS CARTILLAS, COLOCAR HIPERVINCULOS -->
+      <section class="disciplinas" style="background-color: red">
+        <div class="contenedor__introduccion">
+          <h2>DISCIPLINAS</h2>
+          <p class="contenedor__introduccion__información">
+            Acá tenemos todas las disciplinas disponibles que poseemos en este
+            increíble lugar. Revisalas y elige la que más te guste!
+          </p>
+        </div>
+        <div class="contenedor__cartillas">
+          <div class="card border-secondary text-bg-dark mb-3" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="Clases de cardio" />
+            <div class="card-body">
+              <a class="btn btn-dark" href="#">
+                <h5 class="card-title">Cardio</h5>
+              </a>
+            </div>
+          </div>
+          <div class="card border-secondary text-bg-dark mb-3" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="Clases de funcional" />
+            <div class="card-body">
+              <a class="btn btn-dark" href="#">
+                <h5 class="card-title">Funcional</h5>
+              </a>
+            </div>
+          </div>
+          <div class="card border-secondary text-bg-dark mb-3" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="Clases de GAP" />
+            <div class="card-body">
+              <a class="btn btn-dark" href="#">
+                <h5 class="card-title">GAP</h5>
+              </a>
+            </div>
+          </div>
+          <div class="card border-secondary text-bg-dark mb-3" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="Clases con pesas" />
+            <div class="card-body">
+              <a class="btn btn-dark" href="#">
+                <h5 class="card-title">Pesas</h5>
+              </a>
+            </div>
+          </div>
+          <div class="card border-secondary text-bg-dark mb-3" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="Clases de spinning" />
+            <div class="card-body">
+              <a class="btn btn-dark" href="#">
+                <h5 class="card-title">Spinning</h5>
+              </a>
+            </div>
+          </div>
+          <div class="card border-secondary text-bg-dark mb-3" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="Clases de yoga" />
+            <div class="card-body">
+              <a class="btn btn-dark" href="#">
+                <h5 class="card-title">Yoga</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Profesores -->
+      <section class="profesores" style="background-color: rgb(38, 38, 195)">
+        <div class="contenedor__introduccion">
+          <h2>PROFESORES</h2>
+          <p class="contenedor__introduccion__informacion">
+            ¡Estos son los profesionales que te acompañarán en tu nuevo
+            objetivo!
+          </p>
+        </div>
+        <div class="contenedor__cartillas">
+          <div class="profesores__contenedor__cartillas__cartillaProfesor">
+            <img class="rounded-circle" src="..." alt="Profesora Alicia" width="180px" height="180px" />
+            <h3>Alicia Acosta</h3>
+          </div>
+          <div class="profesores__contenedor__cartillas__cartillaProfesor">
+            <img class="rounded-circle" src="..." alt="Profesora Yamila" width="180px" height="180px" />
+            <h3>Yamila Silva</h3>
+          </div>
+          <div class="profesores__contenedor__cartillas__cartillaProfesor">
+            <img class="rounded-circle" src="..." alt="Profesora Oscar" width="180px" height="180px" />
+            <h3>Oscar Rojas</h3>
+          </div>
+        </div>
+      </section>
+      <!-- Sección Beneficios -->
+      <section class="beneficios" style="background-color: green">
+        <div class="carta__beneficios card text-start text-bg-dark p-3">
+          <h5 class="card-header border-light">BENEFICIOS</h5>
+          <div class="carta__beneficios__informacion card-body">
+            <p class="carta__beneficios__informacion__texto card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              eos animi excepturi quasi beatae voluptatibus blanditiis
+              voluptas odit magni, magnam perferendis error dolore officia
+              expedita optio et. Saepe, quis beatae!
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- Sección Empezá Hoy -->
+      <section class="empezaHoy" style="background-color: yellow">
+
+
+        <div class="carta__empezaHoy card text-bg-dark p-3">
+
+          <h5 class="card-header border-0">¡EMPEZÁ HOY!</h5>
+          
+          <div class="carta__empezaHoy__informacion card-body row g-0">
+            
+            <div class="carta__empezaHoy__informacion__texto col-4">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eos animi excepturi quasi beatae voluptatibus blanditiis
+                voluptas odit magni, magnam perferendis error dolore officia
+                expedita optio et. Saepe, quis beatae!
+              </p>
+            </div>
+
+            <div class="carta__empezaHoy__informacion__boton col-8">
+              <button type="button " class="btn btn-light border-0">
+                CONTACTATE CON NOSOTROS
+              </button>
+            </div>
+          
+          </div>
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Sección Footer -->
+    <section class="footer" style="background-color: rgb(56, 30, 185)">
+      <div class="card text-bg-dark">
+        <div class="card-header border-light">
+          <div class="footer__logo">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo-fb.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+              GymTotal
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="footer__contenedor__redesSociales">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo-fb.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo-instagram.png" alt="Logo" width="30" height="24"
+                class="d-inline-block align-text-top" />
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo-wp.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Script de BootsTrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+</html>
